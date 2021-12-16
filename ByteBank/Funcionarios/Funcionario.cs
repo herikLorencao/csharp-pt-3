@@ -18,14 +18,9 @@ namespace ByteBank.Funcionarios
             CPF = cpf;
         }
 
-        public virtual void AumentarSalario()
-        {
-            Salario *= 1.1;
-        }
+        // public virtual void AumentarSalario()
+        public abstract void AumentarSalario();
 
-        public virtual double GetBonificacao()
-        {
-            return Salario * 0.1;
-        }
+        public abstract double GetBonificacao();
     }
 }
